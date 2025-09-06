@@ -1,6 +1,3 @@
-Sure! You can add a **“To Be Added Next”** section at the bottom of the README to outline planned features. Here's the updated version:
-
-```markdown
 # Dallel
 
 Dallel is a modern web application built with **Next.js**, **TypeScript**, and **Tailwind CSS**, designed to manage posts and services. Users can sign up, sign in, browse posts, and services, and add new entries dynamically.  
