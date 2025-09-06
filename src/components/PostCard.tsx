@@ -24,15 +24,27 @@ export default function PostCard({ post }: PostCardProps) {
     <div className="p-4 w-full flex items-center justify-center">
       <div className="px-6 py-5 bg-white dark:bg-gray-800 shadow-md hover:shadow-lg transition rounded-xl w-full max-w-lg">
         {/* Header */}
-        <div className="flex mb-4 items-center justify-between">
+        <div className="flex items-center justify-between mb-4">
+          {/* Name and Date */}
           <div>
-            <span className="block font-semibold text-lg text-gray-900 dark:text-gray-100">
+            <span
+              className="block font-semibold text-lg text-gray-900 dark:text-gray-100"              
+            >
               {post.name}
             </span>
-            <span className="block text-xs text-gray-500 dark:text-gray-400">
+            <span
+              className="block text-xs text-gray-500 dark:text-gray-400"
+            >
               {post.date}
             </span>
           </div>
+
+          {/* Edit Button */}
+          <button className="flex items-center space-x-1 px-3 py-1 bg-blue-500 text-white text-sm font-medium rounded-lg hover:bg-blue-600 transition"
+          
+          >
+            <span>Edit</span>
+          </button>
         </div>
 
         {/* Content */}
@@ -64,7 +76,9 @@ export default function PostCard({ post }: PostCardProps) {
               onClick={dislike}
             >
               <ThumbsDown className="h-5 w-5 text-red-500" />
-              <span className="text-gray-600 dark:text-gray-300">{dislikes}</span>
+              <span className="text-gray-600 dark:text-gray-300">
+                {dislikes}
+              </span>
             </button>
           </div>
         </div>
