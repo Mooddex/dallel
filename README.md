@@ -19,7 +19,7 @@ Dallel is a modern web application built with **Next.js**, **TypeScript**, and *
 
 - **Frontend:** Next.js 15 (App Router), React, Tailwind CSS  
 - **Backend:** Node.js (planned API integration)  
-- **Database:** PostgresQl (planned)  
+- **Database:** PostgreSQL (planned)  
 - **Language:** TypeScript  
 - **Other:** ESLint, PostCSS  
 
@@ -60,7 +60,7 @@ npm run dev
 
 ## 📌 To Be Added Next
 
-* Backend integration for storing posts and services in MongoDB
+* Backend integration for storing posts and services in PostgreSQL
 * Real-time updates for posts and services (like live feed)
 * User profile editing
 * Like / dislike functionality on posts and services
