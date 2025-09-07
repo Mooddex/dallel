@@ -1,7 +1,13 @@
 # Dallel
 
-Dallel is a modern web application built with **Next.js**, **TypeScript**, and **Tailwind CSS**, designed to manage posts and services. Users can sign up, sign in, browse posts and services, and add new entries dynamically.
+Dallel is a modern web application built with Next.js, TypeScript, and Tailwind CSS.
+It is designed to help users explore government services, including:
 
+- What requirements are needed before visiting
+
+- The services available
+
+- The associated prices
 ---
 
 ## ⚡ Features
