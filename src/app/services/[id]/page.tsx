@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { Service } from "@/types/Services";
 
-// This should match your current list or fetch from API later
+// Temporary static list — replace with DB/API later
 const govServices: Service[] = [
   { id: "1", title: "ID Renewal", subtitle: "Renew your National ID card" },
   { id: "2", title: "Passport Services", subtitle: "Apply or renew your passport" },
@@ -11,17 +11,15 @@ const govServices: Service[] = [
   { id: "6", title: "Electricity Bills", subtitle: "Check & pay your bills online" },
 ];
 
-interface ServicePageProps {
-  params: { id: string };
-}
+export default async function ServicePage({
+  params,
+}: {
+  params: Promise<{ id: string }>; 
+}) {
+  const { id } = await params;
 
-export default function ServicePage({ params }: ServicePageProps) {
-  const { id } = params;
-
-  // Find the service with this ID
   const service = govServices.find((s) => s.id === id);
 
-  // If service not found, show 404
   if (!service) return notFound();
 
   return (
@@ -30,4 +28,10 @@ export default function ServicePage({ params }: ServicePageProps) {
       <p className="text-gray-700 text-lg">{service.subtitle}</p>
     </div>
   );
+}
+
+export async function generateStaticParams() {
+  return govServices.map((service) => ({
+    id: service.id,
+  }));
 }

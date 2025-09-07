@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Signup from "./Signup";
 
 export default function Landing() {
@@ -10,7 +9,7 @@ export default function Landing() {
             Dallel
           </h1>
           <p className="leading-relaxed mt-4">
-            Before you go ask about the papers, expenses and the route .</p>
+            Before you go, ask about the papers, expenses and the route .</p>
         </div>
         <Signup />
       </div>

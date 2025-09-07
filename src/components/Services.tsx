@@ -66,6 +66,13 @@ export default function ServicesSection() {
           Add More
         </button>
         </Link>
+        <span className="flex mx-auto mt-16 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none  rounded text-lg"></span>
+        <Link href="/chatbot">
+        <button className="flex mx-auto mt-16 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">
+          Ask ChatGPT
+        </button>
+        </Link>
+        
       </div>
     </section>
   );

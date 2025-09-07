@@ -1,6 +1,7 @@
 
 import Link from "next/link";
 import PostCard from "./PostCard";
+import Image from "next/image";
 
 interface Post {
   id: string;
@@ -56,10 +57,12 @@ export default function Profile() {
     <div className="max-w-5xl mx-auto px-4 py-8 bg-white">
       {/* Header Section */}
       <div className="flex flex-col items-center text-center mb-8">
-        <img
+         <Image
+          width={112} 
+          height={112} 
           src="/me.png"
           alt="Profile picture"
-          className="w-28 h-28 rounded-full shadow-md"
+          className="w-28 h-28 rounded-full shadow-md object-cover" // Added object-cover for better image handling
         />
         <h2 className="mt-4 text-2xl font-bold text-gray-900">
           Mahmoud Salama
@@ -80,13 +83,11 @@ export default function Profile() {
             Posts
           </h3>
           
-          <button
-            className="px-4 py-2 text-sm font-medium text-white bg-green-600 rounded-lg shadow hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400"
-          >
-            <Link href="/posts/new">
-            + New Post
-           </Link>
-          </button>
+           <Link href="/posts/new">
+            <button className="px-4 py-2 text-sm font-medium text-white bg-green-600 rounded-lg shadow hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 transition-colors">
+              + New Post
+            </button>
+          </Link>
          
         </div>
 

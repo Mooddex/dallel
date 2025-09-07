@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FcGoogle } from "react-icons/fc";
 
 export default function Signup() {
   return (
@@ -14,6 +15,17 @@ export default function Signup() {
           type="text"
           id="full-name"
           name="full-name"
+          className="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+        />
+      </div>
+      <div className="relative mb-4">
+        <label htmlFor="full-name" className="leading-7 text-sm text-gray-600">
+          UserName
+        </label>
+        <input
+          type="text"
+          id="username"
+          name="username"
           className="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
         />
       </div>
@@ -43,8 +55,15 @@ export default function Signup() {
       <button className="text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg cursor-pointer">
         Sign Up
       </button>
+
+      {/* Google Sign Up */}
+      <button className="flex items-center justify-center gap-2 text-gray-700 bg-white border border-gray-300 py-2 px-8 mt-3 rounded text-lg cursor-pointer hover:bg-gray-100">
+        <FcGoogle size={24} />
+        Sign up with Google
+      </button>
+
       <p className="text-xs text-gray-500 mt-3">
-        Alredy a member ? <br />
+        Already a member? <br />
         <Link href="/signin" className="text-3xl hover:text-green-600">
           Sign in
         </Link>

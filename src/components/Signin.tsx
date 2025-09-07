@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FcGoogle } from "react-icons/fc";
 
 export default function Signin() {
   return (
@@ -35,6 +36,11 @@ export default function Signin() {
         <button className="w-full text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg cursor-pointer mb-4">
           Sign In
         </button>
+         {/* Google Sign Up */}
+              <button className="flex items-center justify-center gap-2 text-gray-700 bg-white border border-gray-300 py-2 px-8 mt-3 rounded text-lg cursor-pointer hover:bg-gray-100">
+                <FcGoogle size={24} />
+                Sign in with Google
+              </button>
 
         <p className="text-center text-gray-500 text-sm">
           New here?{" "}

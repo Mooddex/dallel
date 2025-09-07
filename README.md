@@ -12,41 +12,50 @@ Dallel is a modern web application built with **Next.js**, **TypeScript**, and *
 - Responsive design with Tailwind CSS
 - Modular components for easy maintenance
 - TypeScript support with type safety
+- Ai Chatbot for Ai Assistant while searching
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Frontend:** Next.js 15 (App Router), React, Tailwind CSS  
+- **Frontend:** Next.js 15 (App Router), React, Tailwind CSS,Shadcn  
 - **Backend:** Node.js (planned API integration)  
 - **Database:** PostgreSQL (planned)  
 - **Language:** TypeScript  
+- **AI:** Brain AI, OPENAI  
 - **Other:** ESLint, PostCSS  
 
 ---
 
 ## 🚀 Getting Started
 
-1. Clone the repository:  
-```bash
-git clone <your-repo-url>
+1. Clone the repository:
+   ```bash
+   git clone <your-repo-url>
 ````
 
-2. Install dependencies:
+2. Create a `.env` file in the root directory and add your keys:
 
-```bash
-npm install
+   ```env
+   BRAINAPI_API_KEY=your_brain_api_key
+   OPENAI_API_KEY=your_openai_api_key
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
 ```
-
-3. Run the development server:
-
-```bash
-npm run dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
----
 
 ## 📄 Contributing
 
@@ -63,11 +72,10 @@ npm run dev
 * Backend integration for storing posts and services in PostgreSQL
 * Real-time updates for posts and services (like live feed)
 * User profile editing
-* Like / dislike functionality on posts and services
+* Like / dislike functionality on posts
 * Search filters for location, authority, and service type
 * Notifications system for users
 * Dark mode toggle
-* Deployment to Vercel or similar hosting platform
 
 ---
 
